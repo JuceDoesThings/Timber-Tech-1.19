@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "timber_tech",
+  "version": "${version}",
+
+  "name": "Timber Tech",
+  "description": "This is a mod focused on adding more uses for wood across the game",
+  "authors": [
+    "JuceDoesThings"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/timber_tech/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.jucedoesthings.timber_tech.TimberTech"
+    ],
+    "client": [
+      "net.jucedoesthings.timber_tech.TimberTechClient"
+    ]
+  },
+  "mixins": [
+    "timber_tech.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
